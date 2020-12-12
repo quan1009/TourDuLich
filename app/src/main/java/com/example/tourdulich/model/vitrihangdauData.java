@@ -1,6 +1,6 @@
 package com.example.tourdulich.model;
 
-public class GandayData {
+public class vitrihangdauData {
     String placeName;
     String countryName;
     String price;
@@ -14,7 +14,7 @@ public class GandayData {
         this.imageUrl = imageUrl;
     }
 
-    public GandayData(String placeName, String countryName, String price, Integer imageUrl){
+    public vitrihangdauData(String placeName, String countryName, String price, Integer imageUrl){
         this.placeName = placeName;
         this.countryName = countryName;
         this.price = price;

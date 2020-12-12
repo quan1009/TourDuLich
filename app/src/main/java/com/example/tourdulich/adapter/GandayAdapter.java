@@ -2,6 +2,7 @@ package com.example.tourdulich.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -18,11 +19,11 @@ import java.util.List;
 public class GandayAdapter extends RecyclerView.Adapter<GandayAdapter.GandayViewHolder> {
 
     Context context;
-    List<GandayData> GandayDataList;
+    List<GandayData> gandayDataList;
 
     public GandayAdapter(Context context, List<GandayData> gandayDataList) {
         this.context = context;
-        GandayDataList = gandayDataList;
+        this.gandayDataList = gandayDataList;
     }
 
     @NonNull
@@ -36,16 +37,18 @@ public class GandayAdapter extends RecyclerView.Adapter<GandayAdapter.GandayView
     @Override
     public void onBindViewHolder(@NonNull GandayViewHolder holder, int position) {
 
-        holder.countryName.setText(GandayDataList.get(position).getCountryName());
-        holder.placeName.setText(GandayDataList.get(position).getPlaceName());
-        holder.price.setText(GandayDataList.get(position).getPrice());
-        holder.placeImage.setImageResource(GandayDataList.get(position).getImageUrl());
+        holder.countryName.setText(gandayDataList.get(position).getCountryName());
+        holder.placeName.setText(gandayDataList.get(position).getPlaceName());
+        holder.price.setText(gandayDataList.get(position).getPrice());
+        holder.placeImage.setImageResource(gandayDataList.get(position).getImageUrl());
+
+
 
     }
 
     @Override
     public int getItemCount() {
-        return GandayDataList.size();
+        return gandayDataList.size();
     }
 
     public static final class GandayViewHolder extends RecyclerView.ViewHolder{
