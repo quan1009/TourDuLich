@@ -41,9 +41,9 @@
             android:text="Chuyến đi kế tiếp"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:layout_editor_absoluteX="17dp"
-            tools:ignore="MissingConstraints" />
+             />
 
         <ImageView
             android:id="@+id/imageView"
@@ -92,14 +92,15 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/roboto_bold"
         android:text="Tất cả"
-        android:textColor="@color/black"
+        android:textColor="@android:color/background_dark"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView3"
-        tools:layout_editor_absoluteX="316dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginRight="16dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/ganday_recycler"
