@@ -1,6 +1,7 @@
 package com.example.tourdulich.adapter;
 
 import android.content.Context;
+import android.telecom.Call;
 import android.view.LayoutInflater;
 import android.content.Intent;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.tourdulich.DetailsActivity;
 import com.example.tourdulich.R;
 import com.example.tourdulich.model.GandayData;
 
@@ -41,6 +43,14 @@ public class GandayAdapter extends RecyclerView.Adapter<GandayAdapter.GandayView
         holder.placeName.setText(gandayDataList.get(position).getPlaceName());
         holder.price.setText(gandayDataList.get(position).getPrice());
         holder.placeImage.setImageResource(gandayDataList.get(position).getImageUrl());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(context, DetailsActivity.class);
+                context.startActivity(i);
+            }
+        });
 
 
 

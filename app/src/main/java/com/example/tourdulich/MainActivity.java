@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         GandayDataList.add(new GandayData("Vịnh hạ long","Việt Nam","Từ $300",R.drawable.recentimage1));
         GandayDataList.add(new GandayData("Phong nha kẻ bàng","Việt Nam","Từ $200",R.drawable.recentimage2));
         GandayDataList.add(new GandayData("Vịnh hạ long","Việt Nam","Từ $300",R.drawable.recentimage1));
-        GandayDataList.add(new GandayData("Phong nha kẻ bàng","Việt Nam","Từ $200",R.drawable.recentimage2));
+        GandayDataList.add(new GandayData("Hạ nha kẻ bàng","Việt Nam","Từ $200",R.drawable.recentimage2));
 
 
         setGandayRecycler(GandayDataList);

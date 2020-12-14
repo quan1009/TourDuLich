@@ -1,6 +1,7 @@
 package com.example.tourdulich.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.tourdulich.DetailsActivity;
 import com.example.tourdulich.R;
 import com.example.tourdulich.model.GandayData;
 import com.example.tourdulich.model.vitrihangdauData;
@@ -42,6 +44,8 @@ public class vitrihangdauAdapter extends RecyclerView.Adapter<vitrihangdauAdapte
         holder.price.setText(vitrihangdauDataList.get(position).getPrice());
         holder.placeImage.setImageResource(vitrihangdauDataList.get(position).getImageUrl());
 
+
+        //Thêm click top vị trí đi nhiều
 
 
     }
